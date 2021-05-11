@@ -2,7 +2,7 @@ import React, {useState, createContext } from "react";
 import mockUser from "./mockData.js/mockUser";
 import mockRepos from "./mockData.js/mockRepos";
 import axios from "axios";
-const rootUrl = "http://api.github.com";
+const rootUrl = "https://api.github.com";
 
 const GithubContext = createContext();
 
