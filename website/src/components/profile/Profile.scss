@@ -1,0 +1,52 @@
+#profilePage {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 100vh;
+  #profile-container {
+    padding: 20px;
+    background-color: #1d1a31;
+    grid-row: 2;
+    grid-column: 2;
+    margin: auto;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 620px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    position: relative;
+    .userImg {
+      border-radius: 50%;
+      width: 200px;
+    }
+    h1 {
+      color: #efca08;
+    }
+    ul {
+      padding: 0;
+      display: flex;
+      margin: auto;
+      list-style-type: none;
+      flex-direction: row;
+      justify-content: space-evenly;
+      li {
+        padding: 10px;
+        background-color: #4abdac;
+        border-radius: 8px;
+        span {
+          color: #1a0f1b;
+          font-size: 24px;
+          font-weight: 700;
+          margin: 0;
+          padding: 0;
+        }
+        p {
+          font-size: 18px;
+          font-weight: 700;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+}
