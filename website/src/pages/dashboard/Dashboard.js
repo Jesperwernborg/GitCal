@@ -1,5 +1,5 @@
 import React from "react";
-import SearchUser from "../searchUser/SearchUser";
+import SearchUser from "../../components/searchUser/SearchUser";
 import './Dashboard.scss';
 
 function Dashboard() {

@@ -19,7 +19,7 @@ function SearchUser() {
   return (
     <div className="searchContainer">
      
-      <form onSubmit={handleSubmit}>
+      <form >
         <div className="form-control">
           <div className="input-field">
             <input placeholder="Github username"
@@ -28,8 +28,8 @@ function SearchUser() {
               onChange={(e) => setUser(e.target.value)}
             />
           </div>
-          {!loading && (<Link className="linkBtn" to={`/${user}`} type="submit">
-            Search
+          {!loading && (<Link className="linkBtn" to={`/${user}`} onSubmit={handleSubmit} type="submit">
+            Result
           </Link>)}
           
         </div>

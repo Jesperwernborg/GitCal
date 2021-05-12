@@ -21,7 +21,7 @@ const GithubProvider = ({ children }) => {
     toggleError();
     setLoading(true);
     const response = await axios(`${rootUrl}/users/${user}`).catch((err) =>
-      console.log("You have passed your limited amount of requests (60-per-hour)")
+      console.log("You have either passed your limited amount of requests (60-per-hour) or the username were wrong")
     );
 
     if(response) {

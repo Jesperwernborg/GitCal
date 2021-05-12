@@ -1,7 +1,7 @@
 .searchContainer {
   grid-row: 2;
   grid-column: 3;
-  margin: auto;
+  
   background-color: #1d1a31;
   border-radius: 8px;
   width: 100%;
@@ -10,6 +10,7 @@
   max-width: 340px;
   box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
   position: relative;
+  margin: auto;
   .errorMsg {
     font-size: 18px;
     font-weight: 600;
@@ -54,8 +55,8 @@
         margin-top: 20px;
         margin-bottom: 20px;
         background-color: #f7b733;
-        color: #dfdce3;
-        font-weight: 500;
+        color: #332f47;
+        font-weight: 700;
         font-size: 18px;
         height: 47px;
         line-height: 47px;

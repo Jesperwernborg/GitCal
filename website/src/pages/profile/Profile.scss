@@ -1,14 +1,29 @@
+.linkToDashboard {
+  grid-row: 2;
+  grid-column: 2;
+  margin: auto;
+  width: 70%;
+  text-decoration: none;
+  border-radius: 18px;
+  transition: 1s;
+  cursor: pointer;
+  span {
+    color: black;
+    font-size: 70px;
+    width: 100%;
+    transition: 0.2s;
+  }
+}
+.linkToDashboard:hover span {
+  font-size: 52px;
+}
+
 #profilePage {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  height: 100vh;
+  grid-row: 2;
+  grid-column: 3;
   #profile-container {
     padding: 20px;
     background-color: #1d1a31;
-    grid-row: 2;
-    grid-column: 2;
     margin: auto;
     border-radius: 8px;
     width: 100%;
@@ -30,6 +45,7 @@
       flex-direction: row;
       justify-content: space-evenly;
       li {
+        margin-right: 10px;
         padding: 10px;
         background-color: #4abdac;
         border-radius: 8px;
@@ -46,6 +62,9 @@
           margin: 0;
           padding: 0;
         }
+      }
+      li:last-child {
+        margin-right: 0;
       }
     }
   }

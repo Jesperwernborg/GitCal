@@ -1,8 +1,9 @@
 import React from "react";
 import "./App.css";
-import Profile from "./components/profile/Profile";
+import Profile from "./pages/profile/Profile";
 import Error from "./components/error/Error";
-import Dashboard from "./components/dashboard/Dashboard";
+import Dashboard from "./pages/dashboard/Dashboard";
+import Logo from "./components/logo/Logo";
 
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
@@ -10,6 +11,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Logo></Logo>
         <Switch>
           <Route exact={true} path="/">
             <Dashboard />

@@ -1,7 +1,9 @@
 import React, { useContext, useEffect, useRef } from "react";
-import { Redirect } from "react-router";
-import { GithubContext } from "../context/Context";
+import { Redirect }  from "react-router";
+import {Link} from "react-router-dom";
+import { GithubContext } from "../../components/context/Context";
 import loadingImg from "../../img/loading-12.gif";
+
 import "./Profile.scss";
 
 const Profile = (props) => {
@@ -36,6 +38,9 @@ const Profile = (props) => {
     return <Redirect to="/"></Redirect>;
   } else {
     return (
+      <React.Fragment>
+        <div className="linkToDashboard">
+        <Link className="Link" to="/"><span>&laquo;</span></Link></div>
       <div id="profilePage">
         <div id="profile-container">
           <img className="userImg" src={avatar_url} alt={name} />
@@ -56,6 +61,7 @@ const Profile = (props) => {
           </ul>
         </div>
       </div>
+      </React.Fragment>
     );
   }
 };
